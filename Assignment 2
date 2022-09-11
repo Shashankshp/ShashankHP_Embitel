@@ -70,9 +70,31 @@ int main()
 
 
 4. Program XOR
+
 #include <stdio.h>
 int main() {
     int a = 12, b = 25;
     printf("Output = %d", a^b);
     return 0;
 }
+
+5. Macro for little endian and Big Endian
+
+#include<stdio.h>
+int main()
+{
+   int val = 0x11223344;
+   int converted =0; 
+   printf("Value before conversion = 0x%x\n", val);
+   convertd |=((0x000000ff & value)<<24);
+   convertd |=((0x000000ff & value)<<8);
+   convertd |=((0x000000ff & value)>>8);
+   convertd |=((0x000000ff & value)>>24);
+    
+   printf("Value before conversion = 0x%x\n", converted);
+   return 0;
+   
+   }
+   
+ 
+ 
